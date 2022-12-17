@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: #DDDDDD;
+    color: #717171;
+}
+
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/sza.gif);
+    background-size: cover;
+    background-position: center;
+}
+
+.container{
+    padding: 5px 5%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo{
+    width: 140px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.header-text{
+    margin-top: 10%;
+    font-size: 30px;
+    color: #D1D1D1;
+}
+
+.header-text h1{
+    font-size: 60px;
+    margin-top: 15px;
+    color: #DDDDDD;
+}
+
+.headings h1{
+    color: #0022CC;
+}
+
+<!----GALLERY-->
+#GALLERY{
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    background-color: #DDDDDD;
+    color: #D1D1D1;
+    padding: 60px;
+}
+
+.pic{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+
+.pic img{
+    width: 360px;
+    height: 360px;
+    margin: 10px;
+}
+
+<!----ABOUT-->
+#about{
+    padding: 80px 0;
+    color: #717171;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1{
+    flex-basis: 35%;
+}
+
+.about-col-1 img{
+    height: 450px;
+    width: 300px;
+    border-radius: 15px;
+}
+
+.about-col-2{
+    flex-basis: 60%;
+}
+
+.subtitle{
+    font-size: 60px;
+    font-weight: 600;
+    color: #0022CC;
+}
+
+#contact{
+	display: flex;
+	flex-direction: column;
+	background-color: #D1D1D1;
+	font-size: 30px;
+	color: #0022CC;
+	padding: 60px;
+}
+
+.rrow{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.map{
+    flex-basis: 35%;
+}
+.sm{
+    flex-basis: 60%;
+}
+
+#contact ul li a {
+	background-color:#D1D1D1;
+	padding: 0;
+}
